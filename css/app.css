@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    margin: 1em;
+    font-family: 'Trebuchet MS', sans-serif
+}
+
+.main-heading {
+    font-size: 2em;
+    font-weight: lighter;
+    color: gray;
+}
+
+.code {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.desc {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.container {
+    padding-top: 3em;
+}

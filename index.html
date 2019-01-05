@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Timothy Liu">
+    <title>getcuda.ml</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container text-center">
+        <p class="main-heading">getcuda.ml</p>
+        <br>
+        <p>Easy installation for NVIDIA CUDA Toolkit and drivers for Ubuntu<br>
+            Use <kbd>CTRL + ALT + T</kbd> to open Terminal and run the following line.<br>
+            Your computer will reboot automatically.</p>
+        <p class="code">curl https://getcuda.ml/ubuntu.sh | sudo bash</p>
+        <h4>
+            <span class="badge badge-dark">For Ubuntu</span>
+            <span class="badge badge-success">CUDA <span class="badge badge-light">10.0.130-1</span></span>
+            <span class="badge badge-success">Driver <span class="badge badge-light">410.78</span></span>
+            <span class="badge badge-info">Docker <span class="badge badge-light">Latest</span></span>
+        </h4>
+        <br>
+        <p>Please do note that running scripts like this from the Internet is a dangerous practice.<br>
+            When running scripts from an untrusted source, please do inspect the contents of the script!</p>
+        <hr>
+        <div class="text-left">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Included in installation script</h5>
+                            <ul>
+                                <li>Latest stable versions of CUDA, NVIDIA drivers</li>
+                                <li>Latest release of Docker and the nvidia-docker2 runtime</li>
+                            </ul>
+                            <br>
+                            <h6 class="card-subtitle mb-2 text-muted">Learn More</h6>
+                            <a href="https://docs.nvidia.com/cuda/" class="card-link">CUDA 10.0</a>
+                            <a href="https://github.com/NVIDIA/nvidia-docker" class="card-link">nvidia-docker</a>
+                            <a href="https://www.docker.com/why-docker" class="card-link">Docker</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Compatibility and Support</h5>
+                            <ul>
+                                <li><b>Ubuntu 16.04+</b> or <b>Ubuntu 18.04+</b></li>
+                                <li>Intel/AMD CPU with NVIDIA GPU</li>
+                                <li>While this script has been tested on workstations and cloud instances (GCP and
+                                    AWS), no warranty or support is provided.</li>
+                                <li><b>This is not an official NVIDIA product.</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">GETCUDA.ML</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">CUDA on Ubuntu</span></a>
+                </li>
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Other Scripts</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="opencv-arm.html">OpenCV on ARM</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery-slim.min.js"></script>
+    <script>
+        window.jQuery || document.write('<js/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
