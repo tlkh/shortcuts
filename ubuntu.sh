@@ -59,7 +59,7 @@ apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repo
 apt-get update
 apt-get install cuda -y
 
-apt-get install nvidia-graphics-drivers-410 -y
+apt-get install nvidia-driver-410 -y
 
 echo "\n###\n"
 echo "Installing nvidia-docker"
