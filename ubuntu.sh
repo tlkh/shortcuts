@@ -35,7 +35,7 @@ echo "Version: Latest release"
 echo "\n###\n"
 
 apt-get update
-apt-get install docker-ce -y
+apt-get install docker-ce=18.06.1~ce~3-0~ubuntu -y
 
 echo "\n###\n"
 echo "Testing Docker CE with hello-world container"
@@ -68,7 +68,7 @@ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | tee /etc/apt/sources.list.d/nvidia-docker.list
 
 apt-get update
-apt-get install nvidia-docker2 -y
+apt-get install nvidia-docker2=2.0.3+docker18.06.1-1 nvidia-container-runtime=2.0.0+docker18.06.1-1 -y
 
 echo "Installed nvidia-docker"
 
