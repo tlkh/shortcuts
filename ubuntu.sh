@@ -49,8 +49,6 @@ echo "Driver version: 410.78"
 echo "CUDA version: 10.0.130-1"
 echo "\n###\n"
 
-add-apt-repository ppa:graphics-drivers/ppa -y
-
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
 
 dpkg -i cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
@@ -58,8 +56,6 @@ apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repo
 
 apt-get update
 apt-get install cuda -y
-
-apt-get install nvidia-driver-410 -y
 
 echo "\n###\n"
 echo "Installing nvidia-docker"
