@@ -33,7 +33,7 @@ echo "Version: Latest release"
 echo "\n###\n"
 
 apt-get update
-apt-get install docker-ce
+apt-get install docker-ce -y
 
 echo "\n###\n"
 echo "Installing nvidia-docker"
@@ -46,7 +46,7 @@ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | tee /etc/apt/sources.list.d/nvidia-docker.list
 
 apt-get update
-apt-get install nvidia-docker2
+apt-get install nvidia-docker2 -y
 
 echo "Installed nvidia-docker"
 
