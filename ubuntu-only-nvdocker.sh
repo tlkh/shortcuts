@@ -56,6 +56,8 @@ echo "\n###\n"
 
 usermod -aG docker jovyan
 
+docker run --rm hello-world
+
 apt-get autoremove -y
 apt-get clean
 rm -rf /var/lib/apt/lists/*
