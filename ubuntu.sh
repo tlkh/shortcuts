@@ -31,7 +31,7 @@ sudo add-apt-repository \
 
 echo "\n###\n"
 echo "Installing Docker CE"
-echo "Version: Latest release"
+echo "Version: 18.06.1 (Kubernetes-compatible)"
 echo "\n###\n"
 
 apt-get update
@@ -45,7 +45,7 @@ docker run --rm hello-world
 
 echo "\n###\n"
 echo "Installing NVIDIA drivers and CUDA"
-echo "Driver version: 410.78"
+echo "Driver version: 410.79"
 echo "CUDA version: 10.0.130-1"
 echo "\n###\n"
 
@@ -59,6 +59,7 @@ apt-get install cuda -y
 
 echo "\n###\n"
 echo "Installing nvidia-docker"
+echo "Version: Version: 18.06.1 (Kubernetes-compatible)"
 echo "\n###\n"
 
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | apt-key add -
