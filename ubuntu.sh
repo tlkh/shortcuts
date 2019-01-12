@@ -38,12 +38,6 @@ apt-get update
 apt-get install docker-ce=18.06.1~ce~3-0~ubuntu -y
 
 echo "\n###\n"
-echo "Testing Docker CE with hello-world container"
-echo "\n###\n"
-
-docker run --rm hello-world
-
-echo "\n###\n"
 echo "Installing NVIDIA drivers and CUDA"
 echo "Driver version: 410.79"
 echo "CUDA version: 10.0.130-1"
@@ -71,11 +65,13 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 apt-get update
 apt-get install nvidia-docker2=2.0.3+docker18.06.1-1 nvidia-container-runtime=2.0.0+docker18.06.1-1 -y
 
-echo "Installed nvidia-docker"
+echo "\nInstalled nvidia-docker\n"
 
 echo "\n###\n"
 echo "Finished with no errors."
-echo "System will now reboot"
+echo "\n\n[TIP]\nDon't want to run Docker with sudo?"
+echo "Add your own user by running 'usermod -aG docker $USER' normally"
+echo "\n\nSystem will now reboot"
 echo "\n###\n"
 
 reboot
