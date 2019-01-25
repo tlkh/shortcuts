@@ -69,9 +69,9 @@ echo -e "\nInstalled nvidia-docker\n"
 
 echo -e "\n###\n"
 echo -e "Finished with no errors."
-echo -e "\n\n[TIP]\nDon't want to run Docker with sudo?"
-echo -e "Add your own user by running 'usermod -aG docker $USER' normally"
-echo -e "\n\nSystem will now reboot"
+echo -e "\n\n[  TIP  ]\nDon't want to run Docker with sudo?"
+echo -e "Add your own user by running 'usermod -aG docker \$USER' normally"
+echo -e "\n\nSystem will now reboot!"
 echo -e "\n###\n"
 
 reboot
