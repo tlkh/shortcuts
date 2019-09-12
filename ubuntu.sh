@@ -50,7 +50,7 @@ apt-get update
 apt-get -y install cuda
 
 echo -e "\n###\n"
-echo -e "Installing nvidia-container-toolkit"
+echo -e "Installing nvidia-docker"
 echo -e "Version: latest stable"
 echo -e "\n###\n"
 
@@ -61,7 +61,8 @@ distribution=$(. /etc/os-release;echo -e $ID$VERSION_ID)
 curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | tee /etc/apt/sources.list.d/nvidia-docker.list
 
 apt-get update
-apt-get install nvidia-container-toolkit -y
+apt-get update
+apt-get install nvidia-docker2 nvidia-container-runtime -y
 
 echo -e "\nInstalled nvidia-docker\n"
 
