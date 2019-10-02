@@ -39,6 +39,7 @@ echo -e "\n###\n"
 echo -e "Installing NVIDIA drivers and CUDA"
 echo -e "Driver version: latest stable"
 echo -e "CUDA version: latest stable"
+echo -e "Note: Will append a line to ~/.bashrc"
 echo -e "\n###\n"
 
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
@@ -48,6 +49,10 @@ add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/repos/
 
 apt-get update
 apt-get -y install cuda
+
+# Run Post-install Step
+CUDA_PATH=$(ls /usr/local | grep -m1 cuda-)
+echo "export PATH=/usr/local/$CUDA_PATH/bin:/usr/local/$CUDA_PATH/NsightCompute-2019.1\${PATH:+:\${PATH}}">> ~/.bashrc
 
 echo -e "\n###\n"
 echo -e "Installing nvidia-docker"
