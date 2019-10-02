@@ -70,7 +70,13 @@ echo -e "\n###\n"
 echo -e "Finished with no errors."
 echo -e "\n\n[  TIP  ]\nDon't want to run Docker with sudo?"
 echo -e "\nAdd your own user by running 'usermod -aG docker \$USER' normally\n"
-echo -e "\n\nSystem will now reboot!"
 echo -e "\n###\n"
 
-reboot
+while true; do
+    read -p "We're done here! Reboot? Y/[N]" yn
+    case $yn in
+        [Yy]* ) reboot;;
+        [Nn]* ) exit 0;;
+        * ) exit 0;;
+    esac
+done
