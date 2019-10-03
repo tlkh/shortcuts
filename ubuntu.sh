@@ -78,10 +78,10 @@ echo -e "\nAdd your own user by running 'usermod -aG docker \$USER' normally\n"
 echo -e "\n###\n"
 
 while true; do
-    read -p "We're done here! Reboot? Y/[N]" yn
+    read -p "We're done here! Reboot? Y/N: " yn
     case $yn in
         [Yy]* ) reboot;;
         [Nn]* ) exit 0;;
-        * ) exit 0;;
+        * );;
     esac
 done
