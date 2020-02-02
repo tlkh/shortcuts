@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo -e "Installation script for Docker CE and nvidia-docker on Ubuntu 16+"
+echo -e "Installation script for Docker CE and nvidia-docker on Ubuntu 18.04+"
 
 echo -e "Set non-interactive frontend"
 echo -e "Script will run without any prompts"
@@ -77,11 +77,5 @@ echo -e "\n\n[  TIP  ]\nDon't want to run Docker with sudo?"
 echo -e "\nAdd your own user by running 'usermod -aG docker \$USER' normally\n"
 echo -e "\n###\n"
 
-while true; do
-    read -p "We're done here! Reboot? Y/N: " yn
-    case $yn in
-        [Yy]* ) reboot;;
-        [Nn]* ) exit 0;;
-        * );;
-    esac
-done
+echo -e "\nPlease reboot your machine!\n"
+
